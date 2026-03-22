@@ -435,7 +435,7 @@
       <!-- ✏️ Vos vraies coordonnées -->
       <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-detail"><strong>Zone d'intervention</strong><span>Région PACA</span></div></div>
       <div class="contact-item"><div class="contact-icon">📞</div><div class="contact-detail"><strong>Téléphone</strong><span>06 72 83 00 59</span></div></div>
-      <div class="contact-item"><div class="contact-icon">✉️</div><div class="contact-detail"><strong>Email</strong><span>rmservices83@gmail.com</span></div></div>
+      <div class="contact-item"><div class="contact-icon">✉️</div><div class="contact-detail"><strong>Email</strong><span>r.maffait@rmservices83.com</span></div></div>
       <div class="contact-item"><div class="contact-icon">🕐</div><div class="contact-detail"><strong>Disponibilité</strong><span>7j/7 24h/24</span></div></div>
     </div>
     <div class="reveal">
@@ -451,7 +451,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2025 <span>RM Services 83</span> — Paysagiste, Maçonnerie & Menuiserie · Région PACA</p><!-- ✏️ -->
+  <p>© 2025 <span>RM Services 83</span> — Élagage, Paysagisme et Maçonnerie · Région PACA</p><!-- ✏️ -->
   <p style="margin-top:0.5rem;font-size:0.75rem;"><a href="#hero" style="color:var(--amber);text-decoration:none;">↑ Retour en haut</a></p>
 </footer>
 
@@ -459,8 +459,8 @@
   // ══════════════════════════════════════════════════
   // ✏️ CONFIGURATION — remplacez par vos vrais IDs Formspree
   //    Créez votre formulaire sur https://formspree.io (gratuit)
-  const FORM_DEVIS   = 'VOTRE_FORM_ID';   // ex: 'xpzvwkja'
-  const FORM_CONTACT = 'VOTRE_FORM_ID';   // peut être identique
+  const FORM_DEVIS   = 'mqeyvprg';   // ex: 'xpzvwkja'
+  const FORM_CONTACT = 'mqeyvprg';   // peut être identique
   // ══════════════════════════════════════════════════
 
   // Nav scroll
@@ -520,7 +520,7 @@
       infos_complementaires: document.getElementById('d-infos').value,
     };
 
-    if (FORM_DEVIS !== 'VOTRE_FORM_ID') {
+    if (FORM_DEVIS !== 'mqeyvprg') {
       try {
         const res = await fetch(`https://formspree.io/f/${FORM_DEVIS}`, {
           method: 'POST',
@@ -548,7 +548,7 @@
     const btn = document.getElementById('contactBtn');
     btn.disabled = true; btn.textContent = 'Envoi…';
 
-    if (FORM_CONTACT !== 'VOTRE_FORM_ID') {
+    if (FORM_CONTACT !== 'mqeyvprg') {
       try {
         const res = await fetch(`https://formspree.io/f/${FORM_CONTACT}`, {
           method: 'POST',
