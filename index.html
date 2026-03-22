@@ -459,8 +459,8 @@
   // ══════════════════════════════════════════════════
   // ✏️ CONFIGURATION — remplacez par vos vrais IDs Formspree
   //    Créez votre formulaire sur https://formspree.io (gratuit)
-  const FORM_DEVIS   = 'mqeyvprg';   // ex: 'xpzvwkja'
-  const FORM_CONTACT = 'mqeyvprg';   // peut être identique
+  const FORM_DEVIS   = mqeyvprg;   // ex: 'xpzvwkja'
+  const FORM_CONTACT = mqeyvprg;   // peut être identique
   // ══════════════════════════════════════════════════
 
   // Nav scroll
@@ -520,7 +520,7 @@
       infos_complementaires: document.getElementById('d-infos').value,
     };
 
-    if (FORM_DEVIS !== 'mqeyvprg') {
+    if (FORM_DEVIS !== mqeyvprg') {
       try {
         const res = await fetch(`https://formspree.io/f/${FORM_DEVIS}`, {
           method: 'POST',
@@ -548,7 +548,7 @@
     const btn = document.getElementById('contactBtn');
     btn.disabled = true; btn.textContent = 'Envoi…';
 
-    if (FORM_CONTACT !== 'mqeyvprg') {
+    if (FORM_CONTACT !== mqeyvprg) {
       try {
         const res = await fetch(`https://formspree.io/f/${FORM_CONTACT}`, {
           method: 'POST',
