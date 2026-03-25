@@ -67,7 +67,7 @@ async function submitDevis() {
 
   try {
     const res = await fetch(`https://formspree.io/f/${FORM_DEVIS}`, {
-      method: 'POST',
+      method="POST",
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(payload),
     });
@@ -96,7 +96,7 @@ async function submitContact() {
 
   try {
     const res = await fetch(`https://formspree.io/f/${FORM_CONTACT}`, {
-      method: 'POST',
+      method="POST",
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({ nom, email, message: msg }),
     });
