@@ -1,8 +1,8 @@
 // ══════════════════════════════════════════════════
 // ✏️ ID Formspree — remplacez si vous en créez un nouveau
 //    Créez/gérez vos formulaires sur https://formspree.io
-const FORM_DEVIS   = 'mqeyvprg';
-const FORM_CONTACT = 'mqeyvprg';
+const FORM_DEVIS   = 'https://formspree.io/f/mqeyvprg';
+const FORM_CONTACT = 'https://formspree.io/f/mqeyvprg';
 // ══════════════════════════════════════════════════
 
 // Nav scroll
