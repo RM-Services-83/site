@@ -5,11 +5,6 @@ const FORM_DEVIS   = 'mqeyvprg';
 const FORM_CONTACT = 'mqeyvprg';
 // ══════════════════════════════════════════════════
 
-app.use((req, res, next) => {
-  res.setHeader("Content-Security-Policy", "script-src 'self' 'unsafe-eval';");
-  next();
-});
-
 // Nav scroll
 window.addEventListener('scroll', () => {
   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
@@ -71,8 +66,7 @@ async function submitDevis() {
   };
 
   try {
-    const res = await fetch(
-      https://formspree.io/f/{FORM_DEVIS}, {
+    const res = await fetch(`https://formspree.io/f/${FORM_DEVIS}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(payload),
@@ -101,8 +95,7 @@ async function submitContact() {
   btn.textContent = 'Envoi…';
 
   try {
-    const res = await fetch(
-      https://formspree.io/f/{FORM_CONTACT}, {
+    const res = await fetch(`https://formspree.io/f/${FORM_CONTACT}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({ nom, email, message: msg }),
